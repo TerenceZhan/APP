@@ -3,13 +3,26 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>测试专用（Terence）</title>
+	<script type="text/javascript">
+		var fnClick=function(ctype){
+			switch(ctype){
+				case 2:
+					window.location="http://dc4s.openxt.com/staff/login.html"
+				break;
+				default:
+					window.location="http://changebag.openxt.com/app/userlogin.html"
+				break;
+			}
+			alert(ctype);
+		}
+	</script>
 </head>
 <body>
 	<p>
-		<a href="http://changebag.openxt.com/app/userlogin.html">卡淘测试入口</a>
+		<a href="#" onclick="javascript:fnClick(1)">卡淘测试入口</a>
 	</p>
 	<p>
-		<a href="http://dc4s.openxt.com/staff/login.html">员工APP测试入口</a>
+		<a href="#" onclick="javascript:fnClick(2)">员工APP测试入口</a>
 	</p>
 </body>
 </html>
